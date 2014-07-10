@@ -27,6 +27,8 @@ Most notable changes are:
   - and later when you check out the project without a plugins folder:
   - `cordova restore plugins --experimental`
 
+@@ the indentation here is awkward 
+@@ can --experimental be earlier in the command sequence? It seems odd here, although I'd have to think about it 
 
 Other changes include:
 <!--more-->
@@ -35,12 +37,12 @@ Other changes include:
 
 * [CB-6728](https://issues.apache.org/jira/browse/CB-6728) Support chip architecture flag `--archs`
 * [CB-6740](https://issues.apache.org/jira/browse/CB-6740) **amazon-fireos** Clean up error reporting when AmazonWebView SDK not found
-* [CB-6943](https://issues.apache.org/jira/browse/CB-6943) Path can include the : if it is absolute, only test for `http`. Added tests
+* [CB-6943](https://issues.apache.org/jira/browse/CB-6943) Path can include the `:` if it is absolute, only test for `http`. Added tests
 * Show full stack for `CordovaError` in verbose mode
-* [CB-6024](https://issues.apache.org/jira/browse/CB-6024) Use nopt instead of optimist in cli
+* [CB-6024](https://issues.apache.org/jira/browse/CB-6024) Use `nopt` instead of optimist in `cli`
 * Add `--usenpm` flag to activate npm based `lazy_load`
 * [CB-6767](https://issues.apache.org/jira/browse/CB-6767) Allow `cordova` to be replaceable in error messages
-* Add `--noregistry` flag for disabling plugin lookup in the registry
+* Add `--noregistry` flag for disabling plugin lookup in the [registry](http://plugins.cordova.io)
 
 ## cordova-lib
 
@@ -52,7 +54,7 @@ Other changes include:
 * [CB-6973](https://issues.apache.org/jira/browse/CB-6973) Run JSHint on all code in `src/` via `npm test`
 * [CB-6542](https://issues.apache.org/jira/browse/CB-6542) Delay creating project until there's some chance that it will succeed
 * `folder_contents()` now ignores `.svn` folders
-* [CB-6970](https://issues.apache.org/jira/browse/CB-6970) Share win project files manipulation code between cordova and plugman
+* [CB-6970](https://issues.apache.org/jira/browse/CB-6970) Share win project files manipulation code between `cordova` and `plugman`
 * [CB-6954](https://issues.apache.org/jira/browse/CB-6954) Share `events.js` between `cordova` and `plugman`
 * [CB-6698](https://issues.apache.org/jira/browse/CB-6698) Automatically copy sub-libraries to project's directory
 * [CB-6942](https://issues.apache.org/jira/browse/CB-6942) Describe running hooks only in verbose mode.
@@ -66,7 +68,7 @@ Other changes include:
 * [CB-6879](https://issues.apache.org/jira/browse/CB-6879) config parser breakout into a cordova level module
 * [CB-6698](https://issues.apache.org/jira/browse/CB-6698) Resolve android `<framework>` relative to plugin_dir when `custom=true`
 * Fix tests on node 0.11.x
-* [CB-6024](https://issues.apache.org/jira/browse/CB-6024) Accept cli vars as part of opts param
+* [CB-6024](https://issues.apache.org/jira/browse/CB-6024) Accept cli vars as part of `opts` param
 * Refer properties-parser package from NPM.
 * [CB-6859](https://issues.apache.org/jira/browse/CB-6859) Removed all **wp7** references, tests still passing
 * Extract `AndroidProject` class into a separate .js file
